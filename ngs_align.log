@@ -1,0 +1,6 @@
+INFO 2017-02-07 16:03:17 [COMMAND_LINE]: /cri/home2/zlei2/PIPELINES/ngs_align/ngs_align.py -i ./data -s dna -g human -q n
+INFO 2017-02-07 16:03:17 FASTQ(S): /cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-DM-1_S4_R1.fastq.gz	/cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-DM-1_S4_R2.fastq.gz
+INFO 2017-02-07 16:03:17 FASTQ(S): /cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-DM-2_S5_R1.fastq.gz	/cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-DM-2_S5_R2.fastq.gz
+INFO 2017-02-07 16:03:17 FASTQ(S): /cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-WT_S1_R1.fastq.gz	/cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-WT_S1_R2.fastq.gz
+INFO 2017-02-07 16:03:17 FASTQ(S): /cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-pp1A-1_S2_R1.fastq.gz	/cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-pp1A-1_S2_R2.fastq.gz
+INFO 2017-02-07 16:03:17 FASTQ(S): /cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-pp1A-2_S3_R1.fastq.gz	/cri/home2/zlei2/projects/2016.05-bxayarath/data/BX-pp1A-2_S3_R2.fastq.gz
