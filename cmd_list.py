@@ -78,30 +78,6 @@ class CMD_LIST:
 	--outSAMunmapped Within
 	'''
 
-	#Generate genome:
-	#STAR --runThreadN 40 
-	#--runMode genomeGenerate 
-	#--genomeDir [genome dir with star index] 
-	#--genomeFastaFiles [*.fa]
-	#--sjdbGTFfile [*.gtf]
-
-	#count_reads_fastq_gz = '''
-	#gzip -dc FASTQ | echo $((`wc -l`/4))
-	#'''
-	
-	#count_reads_bam = '''
-	#samtools view -F4 MAPPED/SAMPLE_NAME.bam | cut -f1 | sort | uniq | wc -l
-	#'''
-	
-	#trimmomatic = '''
-	#java -jar trimmomatic -t NUM_THREAD FASTQ1
-	#'''
-	
-	#samtools mpileup -A -t SP -u -f hg19_chr22.fa SRR2968056_chr22_nodups.bam | bcftools call -vc - > SRR2968056_chr22.vcf
-	#bgzip -c SRR2968056_chr22.vcf > SRR2968056_chr22.vcf.gz
-	#tabix -p vcf SRR2968056_chr22.vcf.gz
-	
-
 	initialized = False
 	cmd2comment = {\
 	"bwamem":"read mapping with bwa mem",\
