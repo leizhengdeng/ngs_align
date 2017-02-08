@@ -136,8 +136,8 @@ def get_arguments():
 	rna3p	defualt bwamem
 	'''
 
-	# GATK bwamem
-	# DEseq star
+	# GATK/3'RNA-seq bwamem
+	# DEseq/edgeR star
 	# cufflinks tophat2
 	num_thread_help = '''\
 	number of threads
@@ -189,6 +189,8 @@ def get_arguments():
 	optional_group.add_argument("-opts",  dest="opts", default=None, help=opts_help)
 	optional_group.add_argument("-l", dest="log_level", default="i", help=log_level_help)	
 	optional_group.add_argument("-q", dest="submit_job", type='bool', default=True, help=submit_job_help)
+	
+	#optional_group.add_argument("-rg", dest="read_group", type='bool', default=False, help=read_group_help)
 
 	optional_group.add_argument("-h", "--help", action="help", help=help_help)
 	optional_group.add_argument("-v", "--version", action="version", version="%(prog)s: version 1.0", help=version_help)
