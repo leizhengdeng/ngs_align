@@ -33,6 +33,7 @@ class CMD_LIST:
 	'''
 
 	# clean star bam file, i.e. remove unmapped reads from star bam file
+	# use -f4 if want to keep unmapped reads
 	cleanstarbam = '''
 	samtools view -h -F4 MAPPED/SAMPLE_NAMEAligned.out.bam |
 	samtools view -bS - > MAPPED/SAMPLE_NAME.bam
