@@ -1,0 +1,10 @@
+https://github.com/swuecho/perl6lib/blob/master/scripts/NGS_Illumina.pm
+
+Read group issue:
+# rule of thumb: same library, same run:flowcell:lane (check fastq), same sample share the same read group (different RGs mean different batch effect in gatk recalibartion)
+# The fastq file may have the information: Instrument:run:flowcell:lane
+#guess read group in ALIGN.__init__():
+#first line of fastq == @HWI-D00553R:33:C81PBANXX:4:1101:3209:2192 1:N:0:GTAGAGGAACTGCATA
+#RGID = SAMPLE_NAME_HWI-D00553R:33:C81PBANXX:4, i.e. by removing tile:x:y==1101:3209:2192
+#used in bwa mem -R "@RG\tID:RGID\tSM:SAMPLE_NAME\tPL:ILLUMINA\tLB:LIB1" (we hope the same sample is not prepared in more than one library)
+
