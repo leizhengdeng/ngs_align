@@ -17,7 +17,7 @@ class CMD_LIST:
 	# bwa mem aligner
 	# read group can be added using -R
 	# rule of thumb: same library, same run:flowcell:lane (check fastq), same sample share the same read group (different RGs mean different batch effect in gatk recalibartion)
-	# In nextseq, the fastq file has the information: Instrument:run:flowcell:lane
+	# The fastq file may have the information: Instrument:run:flowcell:lane
 	bwamem = '''
 	bwa mem -t NUM_THREAD bwa_GENOME_index FASTQ1 FASTQ2 | samtools view -bS - > MAPPED/SAMPLE_NAME.bam
 	'''
