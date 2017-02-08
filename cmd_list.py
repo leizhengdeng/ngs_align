@@ -23,6 +23,7 @@ class CMD_LIST:
 	'''
 	
 	# clean bam file, i.e. remove unmapped reads from bam file
+	# use -f4 if want to keep unmapped reads
 	cleanbam = '''
 	samtools view -h -F4 MAPPED/SAMPLE_NAME.bam |
 	samtools view -bS - > MAPPED/SAMPLE_NAME_tmp.bam
