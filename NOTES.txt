@@ -8,3 +8,6 @@ Read group issue:
 #RGID = SAMPLE_NAME_HWI-D00553R:33:C81PBANXX:4, i.e. by removing tile:x:y==1101:3209:2192
 #used in bwa mem -R "@RG\tID:RGID\tSM:SAMPLE_NAME\tPL:ILLUMINA\tLB:LIB1" (we hope the same sample is not prepared in more than one library)
 
+java -jar snpEff.jar eff -no-downstream -no-intergenic -ud 100 -formatEff -v SNPEFF_DB SAMPLE.vcf > SAMPLE.annotated.vcf
+
+
